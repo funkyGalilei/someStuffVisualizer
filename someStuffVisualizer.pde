@@ -108,5 +108,7 @@ void draw() {
     // Move halfway again
     arclength += w/2;
   
-}
+  }
+  
+  saveFrame("output3/####.png");
 }

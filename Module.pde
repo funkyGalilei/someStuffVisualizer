@@ -1,7 +1,7 @@
 
 class Module {
-  int x;
-  int y;
+  float x;
+  float y;
   color randColor;
   float size;
   boolean inCircle;
@@ -9,7 +9,7 @@ class Module {
   float phase;
   
   // Constructor
-  Module(int xTemporary, int yTemporary, boolean inCircleTemp, int offset) {
+  Module(float xTemporary, float yTemporary, boolean inCircleTemp, float offset) {
     x = xTemporary - offset;
     y = yTemporary - offset;
     inCircle = inCircleTemp;
@@ -22,9 +22,10 @@ class Module {
   }
   
   void update() {
-    float amplitude = .1;
+    float amplitude = .4;
     size = sin(time + phase) * amplitude + size;
-    time = time + 0.00005;
+    //time = time + 0.00005;
+    time = time + 0.00003;
 
   }
   

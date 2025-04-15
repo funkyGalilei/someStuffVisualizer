@@ -1,0 +1,7 @@
+
+data/
+output/
+newFolder/
+
+# Portable Network Graphics
+*.png
